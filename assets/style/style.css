@@ -1,0 +1,270 @@
+@font-face {
+    font-family: Slussen-Bold;
+    src: url(../fonts/Slussen-Bold.woff2);
+}
+
+@font-face {
+    font-family: Slussen-Compressed-Black;
+    src: url(../fonts/Slussen-Compressed-Black.woff2);
+}
+
+@font-face {
+    font-family: Slussen-Expanded-Blac;
+    src: url(../fonts/Slussen-Expanded-Black.woff2);
+}
+
+@font-face {
+    font-family: Slussen-Regular;
+    src: url(../fonts/Slussen-Regular.woff2);
+}
+
+@font-face {
+    font-family: "HelveticaNowDisplay";
+    src: url(../fonts/HelveticaNowDisplay-Medium.woff2);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container-fluid {
+    /* height: 100vh; */
+    position: relative;
+}
+
+.loading {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading span {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0 30px;
+}
+
+#wrap {
+    width: 100%;
+    height: 100vh;
+    /* background: yellow;
+    display: flex; */
+    align-items: center;
+    justify-content: center;
+}
+
+/* section {
+    width: 100%;
+    height: 100vh;
+    background: coral;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    /* font-size: 5vw; 
+}*/
+
+h1 {
+    margin-left: 50px;
+
+    padding-bottom: 43px;
+    overflow: hidden;
+}
+
+.fname span,
+.lname span {
+    font: 500 normal 19.5vw/.95 "HelveticaNowDisplay";
+    letter-spacing: -0.77vw;
+    display: inline-block;
+    opacity: 1;
+    /* padding: 0 0 3vw; */
+}
+
+.dev-name {
+    width: 100vw;
+}
+
+/* h1 span::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: attr(data-char);
+    transform: translateY(-109%);
+  } */
+.menu {
+    float: right;
+    font-size: 20px;
+    font-family: Slussen-Bold;
+    opacity: 0;
+    /* transform: translateX(120%); */
+}
+
+.intro-section {
+    position: absolute;
+    top: 0;
+}
+.dev-img{
+    
+}
+.dev-img img {
+    height: 40%;
+   
+    width: 20%;
+    position: absolute;
+     right: 0;
+    bottom:  -80px;
+    /* position: initial !important;
+    overflow: scroll; */
+    transform-origin: 35% 5%;
+    transform: scale(2, 2);
+}
+
+.intro_bas {
+    /* position: relative; */
+    /* width: 100%;
+    height: 100vh; */
+}
+
+.biographie {
+    height: 100vh;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-transform: translateY(-100);
+    transform: translateY(-100);
+    margin-top: 100vh;
+    margin-bottom: 50vh;
+    z-index: -1;
+    /* position: relative; */
+    
+}
+
+.bio {
+    width: var(--col-6);
+    margin: 0 0 0 calc(var(--col-5) + var(--gutter));
+    position: relative;
+    z-index: 2;
+    opacity: 1;
+    font: 400 normal 2.24vw/1.4 "HelveticaNowDisplay";
+}
+
+:root {
+    --wrapper: 96vw;
+    --gutter: 1.1vw;
+    --leftMargin: 2vw;
+    --col: calc((var(--wrapper) - 11*var(--gutter))/12);
+    --col-2: calc(var(--col)*2 + var(--gutter));
+    --col-3: calc(var(--col)*3 + 2*var(--gutter));
+    --col-4: calc(var(--col)*4 + 3*var(--gutter));
+    --col-5: calc(var(--col)*5 + 4*var(--gutter));
+    --col-6: calc(var(--col)*6 + 5*var(--gutter));
+    --col-7: calc(var(--col)*7 + 6*var(--gutter));
+    --col-8: calc(var(--col)*8 + 7*var(--gutter));
+    --col-9: calc(var(--col)*9 + 8*var(--gutter));
+    --col-10: calc(var(--col)*10 + 9*var(--gutter));
+    --col-12: calc(var(--col)*11 + 10*var(--gutter));
+}
+.section-3 {
+    display: flex;
+    align-items: center;
+    width: var(--wrapper);
+    height: 180vh;
+    margin-top: 50vh;
+}
+
+.section-3 .content{
+   
+    -webkit-flex: 0 0 var(--col-8);
+    flex: 0 0 var(--col-8);
+    margin: 0 0 0 calc(var(--leftMargin) + var(--col-2) + var(--gutter));
+    font: 400 normal 7vw/1.05 "HelveticaNowDisplay";
+}
+/* .white-bg{
+    background-color: #fff;
+    height: 50vh;
+} */
+.section-3 .trait{
+    width: var(--col);
+    background: #000;
+    display: inline-block;
+    height: 1px;
+    vertical-align: middle;
+    margin: 0 calc(var(--gutter)*2) 0 0;
+    padding: 0 !important;
+}
+.section-3 .content div {
+    display: block;
+    font: 400 normal 1.4vw/normal "HelveticaNowDisplay";
+    padding: 5vw 0 0;
+}
+.content .effet1,.effet2, .effet3, .effet4{
+   opacity: 1;
+}
+
+.section-4 {
+    display: flex;
+    align-items: center;
+    width: var(--wrapper);
+    height: 180vh;
+    margin-top: 50vh;
+}
+.section-4 .content1 {
+    -webkit-flex: 0 0 var(--col-8);
+    flex: 0 0 var(--col-8);
+    margin: 0 0 0 calc(var(--leftMargin) + var(--col-2) + var(--gutter));
+    font: 400 normal 7vw/1.05 "HelveticaNowDisplay";
+}
+.section-4 .content1 span {
+    padding-bottom: 1vw;
+}
+.content1 .effect1,.effect2, .effect3, .effect4{
+    opacity: 1;
+ }
+ .horizontal-slider {
+    display: flex;
+    height: calc(100vh - 2 * var(--image-padding));
+    padding: var(--image-padding) 0;
+    width: auto;
+  }
+  
+  .horizontal-slider .slide-img img {
+    height: 65vh;
+    margin: 20px 30px;
+    padding-left: var(--image-padding);
+    width: auto;
+  }
+/*   
+  .horizontal-slider .slide-img:last-child {
+    padding-right: var(--image-padding);
+  } */
+
+  #container {
+    --target: 100%;
+    width: 100vw;
+    background: linear-gradient(to right, #000 var(--target), #fff var(--target));
+    /* display: flex;
+    height: 100vh; */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h2 {
+    color: white;
+    font-size: clamp(2.5rem, 8vw, 6rem);
+    text-align: center;
+    letter-spacing: -0.02em;
+    background: linear-gradient(to right, #fff var(--target), #000 var(--target));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 100%;
+    display: block;
+    line-height: 0.95;
+  }
+  h2 span {
+    font-size: 0.5em;
+    display: block;
+  }
